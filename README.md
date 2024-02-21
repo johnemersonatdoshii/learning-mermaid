@@ -17,9 +17,16 @@ Learning mermaid
 ## Sequence Diagrams
 ```mermaid
 sequenceDiagram
-    Alice->>John: Hello John, how are you?
-    John-->>Alice: Great!
-    Alice-)John: see you later!
+    Steve->>John: Hello John, how are you?
+    John-->>Steve: Great!
+    Steve-)John: see you later!
+```
+
+```mermaid
+sequenceDiagram
+    EposNow->>John: Hello John, how are you?
+    John-->>Steve: Great!
+    Steve-)John: see you later!
 ```
 
 ```mermaid
@@ -33,7 +40,7 @@ sequenceDiagram
     Note over web,db: The user must be logged in to submit blog posts
     web->>+account: Logs in using credentials
     account->>db: Query stored accounts
-    db->>accounts: Respond with query result
+    db->>account: Respond with query result
 
     alt Credentials not found
         account->>web: Invalid credentials
